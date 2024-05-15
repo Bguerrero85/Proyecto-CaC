@@ -89,6 +89,7 @@ body{
 
 #box3{
     overflow: hidden;
+    
 }
 
 #container{
@@ -168,7 +169,7 @@ body{
 
 /*  MENÚ DE REGISTRO */
 
-h2{
+.h2-registro{
     text-align: center;
     margin-top: 20vh;
     font-size: 50px;
@@ -220,3 +221,21 @@ form{
 #envia:hover{ 
     background-color: #2272FF;
 } 
+
+/* NOSTROS.HTML */
+
+.h2-nosotros{
+    color:#fff;
+    text-align: center;
+    font-size: 7vh;
+    margin-top: 20vh;
+}
+
+.section-nosotros{
+    display: flex;
+    flex-direction: column ;
+    text-align: justify;
+    align-items: center;
+    padding: 15px;
+    margin:10px
+}
