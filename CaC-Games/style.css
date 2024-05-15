@@ -180,19 +180,19 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width:100%;
+    padding: 10px;
     align-items: center;
     position:absolute;
-    width: 100%;
-    height: 100%;
 }
+
 form{
     display: flex;
     color:white;
     flex-direction: column;
-    align-items: left;
-    
+    align-items: justify;
+    text-align: left;
      /*Alinea los elementos a la izquierda */
-    
 }
 
 .form{
@@ -200,8 +200,8 @@ form{
     padding: 5px;
     border-radius: 5px;
     border-style: none;
-    align-items: justify;
 }
+
 @media only screen and(max-width:600px){
 .form-container{
     flex-direction: auto;
@@ -210,14 +210,13 @@ form{
 }
 }
 
-#envia{
+#envia {
     padding: 5px;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
 }
 
-#envia :hover{
-    transform: scale(1.2);
-    background-color:#2272FF;
-}
+#envia:hover{ 
+    background-color: #2272FF;
+} 
