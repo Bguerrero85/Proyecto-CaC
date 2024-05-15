@@ -26,7 +26,7 @@ body{
     position: absolute;
     bottom: -100%;
     left: 30%;
-    animation: anim 2s forwards, anim2 2s forwards 2s;
+    animation: anim 1s forwards, anim2 1s forwards 1s;
 }
 
 #box1::after{
@@ -75,7 +75,7 @@ body{
 #text h1{
     position: relative;
     left: -100%;
-    animation: anim3 2s forwards 3s;
+    animation: anim3 1s forwards 2s;
 }
 
 @keyframes anim3{
@@ -95,7 +95,7 @@ body{
     width: 100%;
     position: absolute;
     top: -100%;
-    animation: anim4 2s forwards 2.5s;
+    animation: anim4 1s forwards 1.5s;
 }
 
 #logo{
@@ -126,19 +126,33 @@ body{
     text-transform: uppercase;
 }
 
+/* #menu a{
+    text-decoration: none;
+    color:#fff;
+} */
+
 #menu ul{
     list-style: none;
 }
 
 #menu ul li{
     display: inline-block;
-    margin-left: 50px;
-    cursor: pointer;
+    margin-left: 20px;
+    
+}
+
+#menu ul li a{
+    text-decoration: none;
+    color:#fff;
+    display: inline-block;
+    cursor:pointer;
     transition: 0.3s;
 }
 
-#menu ul li:hover{
-    scale: 120%;
+#menu ul li a:hover{
+    transform: scale(1.2);
+    /* text-decoration: underline double #2272FF; */
+    color: #2272FF; 
 }
 
 @keyframes anim4{
@@ -149,4 +163,61 @@ body{
         top:  0%;
     }
 
+}
+
+
+/*  MENÚ DE REGISTRO */
+
+h2{
+    text-align: center;
+    margin-top: 20vh;
+    font-size: 50px;
+    color:#fff;
+    text-shadow:  4px 4px 6px #2272FF;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+}
+form{
+    display: flex;
+    color:white;
+    flex-direction: column;
+    align-items: left;
+    
+     /*Alinea los elementos a la izquierda */
+    
+}
+
+.form{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border-style: none;
+    align-items: justify;
+}
+@media only screen and(max-width:600px){
+.form-container{
+    flex-direction: auto;
+    justify-content: left;
+    align-items:flex-start;
+}
+}
+
+#envia{
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#envia :hover{
+    transform: scale(1.2);
+    background-color:#2272FF;
 }
