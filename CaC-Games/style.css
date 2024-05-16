@@ -127,11 +127,6 @@ body{
     text-transform: uppercase;
 }
 
-/* #menu a{
-    text-decoration: none;
-    color:#fff;
-} */
-
 #menu ul{
     list-style: none;
 }
@@ -152,7 +147,6 @@ body{
 
 #menu ul li a:hover{
     transform: scale(1.2);
-    /* text-decoration: underline double #2272FF; */
     color: #2272FF; 
 }
 
@@ -166,34 +160,56 @@ body{
 
 }
 
+/* SECCIONES GRID*/
+.contenedor-registro, .contenedor-nosotros, .contenedor-index, .contenedor-contacto{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    min-height: 100vh;
+}
+
+.footer{
+    margin-top: auto;
+    grid-column: span 1;
+    text-align: center;
+    bottom: 0;
+}
+
+.footer .link-footer{
+    text-decoration: none;
+    color:#fff;
+}
 
 /*  MENÚ DE REGISTRO */
 
+.main-registro{
+    background-image: url(./images/2.png);
+}
+
 .h2-registro{
     text-align: center;
-    margin-top: 20vh;
-    font-size: 50px;
+    margin-top: auto; 
     color:#fff;
-    text-shadow:  4px 4px 6px #2272FF;
 }
 
 .form-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width:100%;
+    text-align: center;
     padding: 10px;
     align-items: center;
-    position:absolute;
 }
 
 form{
     display: flex;
     color:white;
     flex-direction: column;
-    align-items: justify;
+    justify-content: center;
+    background-color: #1e242a;
+    border: solid;
+    padding: 10px;
     text-align: left;
-     /*Alinea los elementos a la izquierda */
+
 }
 
 .form{
@@ -201,14 +217,6 @@ form{
     padding: 5px;
     border-radius: 5px;
     border-style: none;
-}
-
-@media only screen and(max-width:600px){
-.form-container{
-    flex-direction: auto;
-    justify-content: left;
-    align-items:flex-start;
-}
 }
 
 #envia {
@@ -228,7 +236,7 @@ form{
     color:#fff;
     text-align: center;
     font-size: 7vh;
-    margin-top: 20vh;
+    
 }
 
 .section-nosotros{
@@ -236,6 +244,7 @@ form{
     flex-direction: column ;
     text-align: justify;
     align-items: center;
+    color:#fff;
     padding: 15px;
     margin:10px
 }
