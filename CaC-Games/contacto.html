@@ -34,8 +34,17 @@
             <p>Nombre: <input class = "form" type="text" required placeholder="Ingrese su nombre aqui."></p> 
             <p>Telefono: <input class = "form" type="number" placeholder="Ingrese su telefono aqui"></p>
             <p>E-mail: <input class = "form" type="email" required placeholder="Ingrese e-mail"></p>
+            <p>Género: </p>
+            <select class="form">
+                <option value="F">Femenino</option>
+                <option value="M">Masculino</option>
+                <option value="X">Prefiero no decirlo</option>
+            </select>
+            <p>Preferencia para comunicarnos:</p>
+            <p><input class="form" type="checkbox" name="Correo" value="E-mail">Correo</p>
+            <p><input class="form" type="checkbox" name="tel" value="telefono">Telefono</p>
             <p>Comentarios:</p>
-            <textarea class="form" id="Comentarios" name="Comentarios"></textarea>
+            <textarea class="form" id="Comentarios" name="Comentarios" maxlength="250"></textarea>
             <input class = "form" id="envia" name="envia" type="submit" Value="Enviar">
             </form>
         </div>

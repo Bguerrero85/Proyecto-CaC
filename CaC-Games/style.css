@@ -163,7 +163,7 @@ body{
 /* SECCIONES GRID*/
 .contenedor-registro, .contenedor-nosotros, .contenedor-index, .contenedor-contacto{
     display: grid;
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: 110px 1fr 100px;
     min-height: 100vh;
 }
 
