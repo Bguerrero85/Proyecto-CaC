@@ -17,8 +17,7 @@
             <div id="menu">
                 <ul>
                     <li><a href="index.html"> HOME</a></li>
-                    <li><a href="#"> JUEGOS</a></li>
-                    <li><a href="#"> ULTIMAS NOVEDADES</a></li>
+                    <li><a href="juegos.html"> JUEGOS</a></li>
                     <li><a href="nosotros.html">NOSOTROS</a></li>
                     <li><a href="register.html">REGISTRARSE</a></li>
                  </ul>
@@ -30,14 +29,16 @@
 <main class="main-registro">
     <h2 class="h2-registro">REGISTRATE</h2>
     <div class="form-container">     
-        <form>
-        <p>Nombre: <input class = "form" type="text" required placeholder="Ingrese su nombre aqui."></p> 
-        <p>Apellido: <input class = "form" type="text" required placeholder="Ingrese su apellido aqui."></p>
-        <p>Telefono: <input class = "form" type="number" placeholder="Ingrese su telefono aqui"></p>
-        <p>E-mail: <input class = "form" type="email" required placeholder="Ingrese e-mail"></p>
-        <p>Clave: <input class = "form" type="password" required></p>
-        <p>Fecha Nacimiento: <input class = "form" type="date" required></p>
-        <input class = "form" id="envia" name="envia" type="submit" Value="REGISTRARSE">
+        <form action="" method="post" id="formulario-registro">
+        <p>Nombre: <input class = "form" id = "name-registro" type="text"  placeholder="Ingrese su nombre aqui."></p> 
+        <p>Apellido: <input class = "form" id = "apellido" type="text"  placeholder="Ingrese su apellido aqui."></p>
+        <p>Telefono: <input class = "form" id="tel-registro" type="number" placeholder="Ingrese su telefono aqui"></p>
+        <p>E-mail: <input class = "form"  id="email-registro" type="email"  placeholder="Ingrese e-mail"></p>
+        <p>Clave: <input class = "form" id="pass-registro" type="password" ></p>
+        
+        <input class = "form" id="envia" name="envia" type="submit" Value="Registrarse">
+
+            <p class="warnings" id="warningsreg"></p>
         </form>
     </div>
 </main>
@@ -49,5 +50,7 @@
     </ul>
     </footer>
 </div>
+
+<script src="./JS/registro.js"></script>
 </body>
 </html>
