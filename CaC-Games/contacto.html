@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link type="image/png" sizes="16x16" rel="icon" href="./images/icons8-control-16.png">
     <title>CaC-Games</title>
 </head>
 <body>
@@ -17,8 +18,7 @@
             <div id="menu">
                 <ul>
                     <li><a href="index.html"> HOME</a></li>
-                    <li><a href="#"> JUEGOS</a></li>
-                    <li><a href="#"> ULTIMAS NOVEDADES</a></li>
+                    <li><a href="juegos.html"> JUEGOS</a></li>
                     <li><a href="nosotros.html">NOSOTROS</a></li>
                     <li><a href="register.html">REGISTRARSE</a></li>
                  </ul>
@@ -30,10 +30,10 @@
     
         <h2 class="h2-registro">CONTACTANOS</h2>
         <div class="form-container">     
-            <form>
-            <p>Nombre: <input class = "form" type="text" required placeholder="Ingrese su nombre aqui."></p> 
-            <p>Telefono: <input class = "form" type="number" placeholder="Ingrese su telefono aqui"></p>
-            <p>E-mail: <input class = "form" type="email" required placeholder="Ingrese e-mail"></p>
+            <form method="post" id="formulario">
+            <p>Nombre: <input class = "form" id="name" type="text"  placeholder="Ingrese su nombre aqui."></p> 
+            <p>Telefono: <input class = "form" id="tel" type="number" placeholder="Ingrese su telefono aqui"></p>
+            <p>E-mail: <input class = "form" id="email" type="email"  placeholder="Ingrese e-mail"></p>
             <p>Género: </p>
             <select class="form">
                 <option value="F">Femenino</option>
@@ -46,6 +46,8 @@
             <p>Comentarios:</p>
             <textarea class="form" id="Comentarios" name="Comentarios" maxlength="250"></textarea>
             <input class = "form" id="envia" name="envia" type="submit" Value="Enviar">
+
+            <p class="warnings" id="warnings"></p>
             </form>
         </div>
        
@@ -59,5 +61,7 @@
         </div>
         </footer>
     </div>
+
+    <script src="./JS/contacto.js"></script>
     </body>
-</header>
+</html>
