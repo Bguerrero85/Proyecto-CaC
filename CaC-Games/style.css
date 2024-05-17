@@ -273,7 +273,6 @@ form{
     margin:10px
 }
 
-<<<<<<< HEAD
 /* FOOTER */
 footer {
     background-color:#1e242a;
@@ -389,38 +388,3 @@ footer {
   }
   
   
-=======
-
-
-/* JUEGOS.HTML */
-
-.section-juegos {
-    padding: 5em;
-}
-
-.flex-container {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: stretch;
-    background-color: #dbdbdb;
-    height: 100%;
-    padding: 15px;
-    gap: 5px;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-
-.flex-container>div {
-    box-sizing: border-box;
-    height: 100%;
-    padding: 16px 8px;
-}
-
-.item img {
-    display: block;
-    height: 200px;
-}
->>>>>>> 7ed714b654d2ebc910a34f56d970ee799ee96924
