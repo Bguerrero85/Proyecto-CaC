@@ -50,7 +50,7 @@ body::-webkit-scrollbar-thumb:hover {
         position: absolute;
         width: 100%;
         height: 100vh;
-        background: #2055b3;
+        background: #171a21;
         top: 80px;
         left: -100%;
         transition: all 0.5s;
@@ -84,6 +84,7 @@ body::-webkit-scrollbar-thumb:hover {
     p {
         font-size: 15px;
     }
+    
 }
 
 #main {
@@ -460,6 +461,7 @@ footer {
     padding: 20px;
     box-shadow: 1px;
     border-radius: 10px;
+    background-color: #171a21;
 }
 
 .integrante:hover {
@@ -487,4 +489,78 @@ hr {
     background-color: #2272FF;
 }
 
+/* JUEGOS-V2.html */
 
+.contenedor-juegos{
+    display: grid;
+    grid-template-rows: 110px 1fr 100px;
+    min-height: 100vh;
+}
+
+.footer-juegos{
+    grid-row: 4/5;
+}
+
+
+.container-secciones{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap:15px;
+    
+}
+
+/* Estilo para los contenedores de juego */
+.container-juego {
+    flex: 1 1 100px; /* Ajusta la base del tamaño de los contenedores */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #171a21; /* Fondo para distinguir cada contenedor */
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.img-juego img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover;
+}
+
+.img-juego img:hover{
+    transition-delay: 0.2s;
+    transition-duration: 0.3s;
+    opacity:0.5;
+    transform: scale(0.9);
+    overflow: hidden;
+}
+
+.titulo-section{
+    text-align: left;
+    color: #fff;
+    padding: 10px;
+    font-size: 30px;
+    margin-top: 20px;
+    width: 100%;
+    border-bottom: #2272FF;
+    border-bottom-style: solid;
+}
+
+
+.container-search{
+    display: flex;
+    flex-direction: column;
+    margin-right: 25%;
+    margin-left: 25%;
+    text-align: center;
+    color: #fff;
+}
+
+.casilla-buscador{
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #171a21;
+    margin-top: 10px;
+    color:#fff;
+}
