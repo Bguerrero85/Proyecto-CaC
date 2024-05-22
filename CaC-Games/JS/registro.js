@@ -37,8 +37,6 @@ formularioregistro.addEventListener("submit", ereg => {
         entrar = true;
     }
 
-    
-
     if (password.value.length < 8) {
         warningsregistro += `La contraseña no es válida <br>`;
         entrar = true;
@@ -47,6 +45,13 @@ formularioregistro.addEventListener("submit", ereg => {
     if (entrar) {
         parraforegistros.innerHTML = warningsregistro;
     }
+    else{
+        parraforegistros.innerHTML = 'Registro éxitoso <br>';
+        setTimeout(() => {
+            location.reload();
+        }, 2000); // 3000 milisegundos = 3 segundos
+    }
+
 });
 
 

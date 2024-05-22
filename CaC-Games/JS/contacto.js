@@ -7,7 +7,7 @@ const parrafo = document.getElementById("warnings");
 formulario.addEventListener("submit", e => {
     e.preventDefault();
     let warnings = "";
-    let regexEmail = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+    let regexEmail = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/
     let entrar = false;
 
     if (nombre.value.length < 6) {
@@ -27,5 +27,11 @@ formulario.addEventListener("submit", e => {
 
     if (entrar) {
         parrafo.innerHTML = warnings;
+    }
+    else {
+        parrafo.innerHTML = "CONTACTO GUARDADO";
+        setTimeout(() => {
+            location.reload();
+        }, 2000); // 2000 milisegundos = 2 segundos
     }
 });
